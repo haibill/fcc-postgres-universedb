@@ -329,6 +329,9 @@ INSERT INTO public.planet VALUES (12, 'Vulcan', 7, NULL, false, true, 'Fictional
 -- Data for Name: space_station; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.space_station VALUES (1, 'ISS', 1, 6, true);
+INSERT INTO public.space_station VALUES (2, 'Deep Space Nine', 2, 300, true);
+INSERT INTO public.space_station VALUES (3, 'Orbital Science Hub', 3, 12, false);
 
 
 --
@@ -368,7 +371,7 @@ SELECT pg_catalog.setval('public.planet_planet_id_seq', 12, true);
 -- Name: space_station_space_station_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.space_station_space_station_id_seq', 1, false);
+SELECT pg_catalog.setval('public.space_station_space_station_id_seq', 3, true);
 
 
 --
